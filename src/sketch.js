@@ -140,6 +140,7 @@ const onConnected = (conn) => {
 };
 
 function setupCanvas() {
+  console.log("setuppp");
   GameState.canvas = window.createCanvas(1200, 950);
   GameState.canvas.parent("canvas");
   GameState.width = GameState.canvas.width;
