@@ -58,8 +58,6 @@ class ClientConnection {
         this.onActionReceive?.(msg);
         return;
       }
-      console.log("Message: ");
-      console.log(msg);
 
       if (msg.Type === "connect") {
         this.#sessionId = msg.SessionId;
