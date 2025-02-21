@@ -49,7 +49,8 @@ class ClientConnection {
     };
     conn.onerror = (error) => {
       this.connected = false;
-      console.log(`ws error: ${error}`);
+      console.log("ws error:");
+      console.log(error);
     };
     conn.onmessage = (event) => {
       const msg = JSON.parse(event.data);
