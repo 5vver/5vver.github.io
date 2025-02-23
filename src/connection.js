@@ -8,6 +8,7 @@ class ClientConnection {
   connected = false;
 
   constructor({
+    sessionId,
     onSessionJoin,
     onSessionQuit,
     onConnected,
@@ -20,6 +21,7 @@ class ClientConnection {
 
     // this.#clientId = getRandomId();
 
+    this.#sessionId = sessionId;
     this.onConnected = onConnected;
     this.onSessionJoin = onSessionJoin;
     this.onSessionQuit = onSessionQuit;
